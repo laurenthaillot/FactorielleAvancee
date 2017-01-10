@@ -2,7 +2,7 @@
 
 # Factorielle Avancée
 
-Base de code propice à l'écriture de tests unitaires 
-et à la gestion d'exceptions
+Base de code propice à l'écriture de tests unitaires et à la gestion d'exceptions
+Laurent
 
 [Cf. définition Wikipédia](https://fr.wikipedia.org/wiki/Factorielle)
