@@ -3,19 +3,21 @@ package co.simplon.factorielle;
 /**
  * Factorielle
  */
-public class Factorielle {
-	public Factorielle() {
-		super();
+
+public class Factorielle  {
+	 public Factorielle()  {
+		
 	}
 
-	public long calculer(long n) {
+	public long calculer(long n) throws Factorielleunvailableexception {
 
 		if (n > 1) {
 			long fact = calculer(n - 1);
 			long factn = n * fact;
 
 			if (factn <= fact) {
-				throw new UnsupportedOperationException();
+				
+				throw new Factorielleunvailableexception("ATTENTION NOMBRE NEGATIF");
 			}
 			return factn;
 		}
@@ -32,6 +34,9 @@ public class Factorielle {
 		 * 
 		 * throw newIllegalArgumentException(); } return 1;
 		 */
+	
 	}
+
+	
 
 }
