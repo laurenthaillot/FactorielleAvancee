@@ -9,7 +9,7 @@ public class Factorielle  {
 		
 	}
 
-	public long calculer(long n) throws Factorielleunvailableexception {
+	public long calculer(long n)  {
 
 		if (n > 1) {
 			long fact = calculer(n - 1);
@@ -26,14 +26,6 @@ public class Factorielle  {
 			throw new IllegalArgumentException();
 		}
 		return 1;
-
-		/*
-		 * if (n > 1) { return n * calculer(-1); }
-		 * 
-		 * else if (n < 0) {
-		 * 
-		 * throw newIllegalArgumentException(); } return 1;
-		 */
 	
 	}
 
