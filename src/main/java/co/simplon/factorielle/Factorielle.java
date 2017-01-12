@@ -13,7 +13,7 @@ public class Factorielle  {
 			long factn = n * fact;
 
 			 if (factn < fact) {
-	                throw new Factorielleunvailableexception("La limite de calcul factoriel atteinte");
+				throw new Factorielleunvailableexception("La limite de calcul factoriel atteinte");
 	            }
 	            return factn;
 	            

@@ -1,6 +1,6 @@
 package co.simplon.factorielle;
 
-public  class Factorielleunvailableexception  extends RuntimeException {
+public class Factorielleunvailableexception  extends RuntimeException {
 	
 
 	private static final long serialVersionUID = 1L;

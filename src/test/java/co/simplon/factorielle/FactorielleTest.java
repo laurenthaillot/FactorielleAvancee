@@ -120,6 +120,7 @@ public class FactorielleTest  {
 		factorielle.calculer(entier);
 		}
 
+@Ignore
 @Test
 	public void afficher_message_erreur_pour_factorielle_valeur_pas_convertible_long()
 		{
@@ -131,6 +132,7 @@ public class FactorielleTest  {
 	
 	}
 	
+@Ignore
 @Test
 	public void afficher_message_pour_factorielle_valeur_convertible_long()
 		{
