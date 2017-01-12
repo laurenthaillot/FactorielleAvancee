@@ -16,17 +16,17 @@ import static org.hamcrest.MatcherAssert.assertThat;
 
 
 public class FactorielleTest  {
-
 	
 	public Factorielle factorielle;
-	
-	
+	public Main main;
+		
 	
 	@Before
 	public void initialiserUtilitaireFactorielle()  {
 		// je peux faire ca car mon objet peut être mutualisé pour tous les
 		// scénarios de test et n'a donc besoin d'être instancié qu'une fois
 		this.factorielle = new Factorielle();
+
 		
 	}
 
@@ -118,6 +118,29 @@ public class FactorielleTest  {
 		long entier=50;
 			
 		factorielle.calculer(entier);
-				
+		}
+
+@Test
+	public void afficher_message_erreur_pour_factorielle_valeur_pas_convertible_long()
+		{
+	Long a =(Long.MAX_VALUE+1);
+	
+	factorielle.calculer(a);
+	
+	System.out.println("Le resultat est superieur a valeur de long(message de factoriel)");
+	
 	}
+	
+@Test
+	public void afficher_message_pour_factorielle_valeur_convertible_long()
+		{
+	long a = (Long.MAX_VALUE+1);
+	long b = fact
+			
+	assertTrue (b < a);	
+	
+	System.out.println("Le resultat est "+ b);
+	
+	}	
+			
 }
