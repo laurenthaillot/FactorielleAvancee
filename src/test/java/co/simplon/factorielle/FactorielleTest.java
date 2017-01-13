@@ -137,7 +137,7 @@ public class FactorielleTest  {
 	public void afficher_message_pour_factorielle_valeur_convertible_long()
 		{
 	long a = (Long.MAX_VALUE+1);
-	long b = fact
+	long b =0;
 			
 	assertTrue (b < a);	
 	
